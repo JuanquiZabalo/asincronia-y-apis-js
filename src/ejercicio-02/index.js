@@ -24,7 +24,8 @@ const miPromesa = new Promise((resuelto, rechazado)=>{
         rechazado('No son iguales')
     }
 });
-
+console.log(typeof(miPromesa))
+console.log(miPromesa)
 miPromesa.then(
     function(resultado){console.log(resultado)},
     function(error){console.log(error)})
